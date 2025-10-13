@@ -1,11 +1,81 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml">
-   <head>
-    <link rel="stylesheet" href="estils.css">
-    <style>
-      
-   </style>
-   </head>
-   <body>
-    
-   </body>
+<html lang="ca">
+<head>
+  <meta charset="UTF-8">
+  <title>FitWear - Contacte</title>
+  <link rel="stylesheet" href="global.css">
+  <style>
+    .contenidor {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    input, textarea {
+      padding: 8px;
+      border: 1px solid #ccc;
+      width: 100%;
+    }
+
+    button {
+      background-color: #333;
+      color: white;
+      border: none;
+      padding: 10px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #555;
+    }
+
+    .mapa {
+      background-color: #ccc;
+      width: 100%;
+      height: 250px;
+      text-align: center;
+      line-height: 250px;
+      color: #555;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <a href="index.html">Inici</a>
+    <a href="productes.html">Productes</a>
+    <a href="contacte.html">Contacte</a>
+  </header>
+
+  <main>
+    <h2>Contacta amb nosaltres</h2>
+    <div class="contenidor">
+      <div>
+        <form>
+          <input type="text" placeholder="Nom">
+          <input type="email" placeholder="Email">
+          <textarea placeholder="Missatge"></textarea>
+          <button>Enviar</button>
+        </form>
+      </div>
+      <div>
+        <p><b>Adreça:</b> Carrer del Gimnàs, 45, Barcelona</p>
+        <p><b>Horari:</b> Dl-Dv 9h a 19h</p>
+        <p><b>Telèfon:</b> 666 123 456</p>
+        <div class="mapa">Mapa aquí</div>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    © 2025 FitWear | Contacte: info@fitwear.cat
+  </footer>
+
+</body>
+</html>

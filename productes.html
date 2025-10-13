@@ -1,11 +1,94 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml">
-   <head>
-    <link rel="stylesheet" href="estils.css">
-   <style>
-      
-   </style>
-   </head>
-   <body>
-     
-   </body>
+<html lang="ca">
+<head>
+  <meta charset="UTF-8">
+  <title>FitWear - Inici</title>
+  <link rel="stylesheet" href="global.css">
+  <style>
+    .hero {
+      background-color: lightgray;
+      text-align: center;
+      padding: 50px 20px;
+    }
+
+    .hero button {
+      background-color: #333;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      cursor: pointer;
+    }
+
+    .hero button:hover {
+      background-color: #555;
+    }
+
+    .cards {
+      display: flex;
+      gap: 15px;
+      margin-top: 30px;
+    }
+
+    .card {
+      background-color: #f3f3f3;
+      padding: 15px;
+      flex: 1;
+      border: 1px solid #ddd;
+      text-align: center;
+    }
+
+    .beneficis {
+      display: flex;
+      justify-content: space-around;
+      background-color: #eee;
+      padding: 10px;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <a href="index.html">Inici</a>
+    <a href="productes.html">Productes</a>
+    <a href="contacte.html">Contacte</a>
+  </header>
+
+  <main>
+    <section class="hero">
+      <h1>Benvinguts a FitWear</h1>
+      <p>Roba esportiva per a totes les edats</p>
+      <button>Descobreix més</button>
+    </section>
+
+    <section class="cards">
+      <div class="card">
+        <h3>Roba esportiva</h3>
+        <p>Per entrenar còmodament.</p>
+        <span>#gym</span>
+      </div>
+      <div class="card">
+        <h3>Moda urbana</h3>
+        <p>Per un estil actiu i modern.</p>
+        <span>#streetwear</span>
+      </div>
+      <div class="card">
+        <h3>Accessoris</h3>
+        <p>Motxilles, gorres i més.</p>
+        <span>#fitlife</span>
+      </div>
+    </section>
+
+    <div class="beneficis">
+      <p>Enviament 48h</p>
+      <p>Canvis gratuïts</p>
+      <p>Pagament segur</p>
+    </div>
+  </main>
+
+  <footer>
+    © 2025 FitWear | Contacte: info@fitwear.cat
+  </footer>
+
+</body>
+</html>
